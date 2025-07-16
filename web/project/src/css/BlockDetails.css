@@ -1,0 +1,83 @@
+/*
+ * @Author: wxyBone 13638456960@163.com
+ * @Date: 2024-12-21 12:28:04
+ * @LastEditors: wxyBone 13638456960@163.com
+ * @LastEditTime: 2024-12-26 02:09:51
+ * @FilePath: \project\src\css\BlockDetails.css
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+ */
+.block-details {
+    background: rgb(21, 26, 27);
+    padding: 18px 25px 60px;
+    width: 100%;
+    min-height: 100%;
+}
+
+.back-btn {
+    height: 42px;
+    background: rgba(168, 206, 210, 0.058);
+    border: 1px solid rgba(168, 206, 210, 0.15);
+    color: rgb(168, 206, 210, 0.85);
+    padding: 0 20px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.3s;
+    margin-bottom: 60px;
+    cursor: pointer;
+}
+
+.back-btn:hover {
+    color: rgb(168, 206, 210, 0.9);
+    background: rgba(168, 206, 210, 0.15);
+    border-color: rgba(168, 206, 210, 0.3);
+}
+
+#block-info {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    gap: 40px;
+}
+
+.blocks-title {
+    color: rgb(189, 208, 211);
+    font-size: 32px;
+    font-weight: 600;
+    margin: 0 0 50px 0;
+}
+
+.info-row {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-label {
+    color: #8c9395;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.info-value {
+    color: #bdd0d3d2;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* 添加一些微妙的动画效果 */
+.block-details {
+    animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

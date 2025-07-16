@@ -1,0 +1,41 @@
+# Go 编译生成的二进制文件
+*.exe
+*.out
+*.test
+
+# Go 依赖包
+node_modules/
+vendor/
+go.sum
+go.mod
+
+# 编辑器/IDE 配置
+.idea/
+.vscode/
+
+# 日志文件
+doc/
+*.log
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# 环境变量/配置
+.env
+
+# 链端
+blockchain/node_modules/
+blockchain/build/
+blockchain/dist/
+blockchain/.env
+blockchain/.env.*
+
+# 前端 node_modules
+web/project/node_modules/
+# 前端构建产物
+web/project/dist/
+web/project/build/
+# 前端环境变量
+web/project/.env
+web/project/.env.*

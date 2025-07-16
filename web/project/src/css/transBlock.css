@@ -1,0 +1,76 @@
+.trans-block-container {
+    background-color: rgb(14, 18, 19);
+    user-select: none;
+    padding-bottom: 50px;
+    width: 100%;
+}
+
+.trans-nav {
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-button {
+    display: flex;
+    justify-content: center;
+    width: 17%;
+    border: none;
+    border-radius: 25px;
+    background-color: #131819;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-button.active {
+    /* background-color: #192021; */
+    width: 60%;
+    /* background-color: #131819; */
+}
+
+.nav-button:hover {
+    filter: brightness(90%);
+}
+
+.nav-block {
+    display: flex;
+    /* flex-direction: row; */
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    padding: 15px 20px;
+    transition: all 0.2s ease-in-out;
+}
+
+.nav-block img {
+    position: 0.8;
+}
+
+.nav-button p {
+    font-size: 17px;
+    color: rgb(181, 206, 207);
+    margin-left: 10px;
+    font-weight: 700;
+    transition: all 0.2s ease-in-out;
+}
+
+/* .nav-button.active p {
+    text-shadow: 0px 3px 2px rgb(172, 35, 124);
+} */
+
+.nav-icon {
+    width: 35px;
+    height: 35px;
+}
+
+.content-area {
+    padding: 20px;
+    margin-top: 22px;
+    overflow-y: auto;
+    width: 94.5%;
+    min-height: 500px;
+    height: auto;
+    margin-left: 1.1%;
+    border: none;
+    border-radius: 25px;
+    background-color: #131819;
+}

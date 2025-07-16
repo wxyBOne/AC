@@ -1,0 +1,43 @@
+html,
+body,
+#app {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.common-layout {
+    background-color: rgb(0, 0, 0);
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+/* 隐藏全局滚动条 */
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* 对于IE和Edge */
+body {
+    -ms-overflow-style: none;
+    /* Windows Edge, IE 浏览器的滚动条隐藏 */
+    scrollbar-width: none;
+    /* Firefox 浏览器的滚动条隐藏 */
+}
+
+a {
+    text-decoration: none;
+}
+
+i,
+p,
+span {
+    user-select: none;
+}

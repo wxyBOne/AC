@@ -1,0 +1,295 @@
+/*
+ * @Author: wxyBone 13638456960@163.com
+ * @Date: 2024-11-05 11:07:39
+ * @LastEditors: wxyBone 13638456960@163.com
+ * @LastEditTime: 2024-12-13 15:41:10
+ * @FilePath: \Vue\dapp_vue\project\src\css\animation.css
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+ */
+.container {
+    background-color: #000000;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+/* 房间背景样式 */
+.room-out {
+    position: relative;
+    background-color: #000000;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    filter: brightness(250%);
+    overflow: auto;
+}
+
+#room {
+    position: relative;
+    background-color: #000000;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+/* 导航栏 */
+.head {
+    width: 100%;
+    display: flex;
+    padding: 20px;
+    background-color: #00000000;
+    /* filter: brightness(80%); */
+}
+
+.logo {
+    width: 25px;
+    opacity: 0.3;
+    margin: -3px 6px 0 0;
+}
+
+.name {
+    display: block;
+    color: rgba(131, 209, 214, 0.374);
+    font-size: 25px;
+    font-weight: 800;
+    margin: -5px 985px 0 0;
+}
+
+.losu {
+    margin: 0px 27px 0 0;
+    color: rgba(131, 209, 214, 0.374);
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+
+.losu:hover {
+    filter: brightness(110%);
+}
+
+.Enter {
+    display: block;
+    margin: -3px 0 0 0;
+    border: rgba(131, 209, 214, 0.374) solid;
+    padding: 2px 18px 1px;
+    border-radius: 50px;
+    transition: all 0.2s linear;
+}
+
+.Enter_ {
+    display: block;
+    position: absolute;
+    z-index: 9;
+    margin: 330px 0 0 584px;
+    border: rgba(119, 180, 187, 0.374) solid;
+    padding: 7px 20px;
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgba(120, 34, 94, 0.648);
+    transition: all 0.2s linear;
+    filter: brightness(80%);
+}
+
+.Enter_:hover {
+    filter: brightness(90%);
+}
+
+.Enter_ .enter_ {
+    font-size: 32px;
+    font-weight: 400;
+    color: rgba(131, 209, 214, 0.374);
+    text-shadow: 0 0 10px rgba(120, 34, 94, 0.648);
+    font-style: italic;
+}
+
+.enter_ {
+    margin: 0;
+    border: 0;
+    text-decoration: none;
+    color: rgba(131, 209, 214, 0.374);
+    font-size: 17px;
+    font-weight: 600;
+    transition: all 0.4s linear;
+}
+
+.Enter:hover {
+    background-color: rgba(119, 180, 187, 0.371);
+}
+
+.Enter:hover.enter_ {
+    color: #000000;
+}
+
+/* 标题 */
+.title {
+    margin: 120px 0 0 380px;
+    color: rgba(64, 104, 107, 0.627);
+    text-shadow: 0px 10px 5px rgba(62, 19, 50, 0.891);
+    font-size: 150px;
+    font-weight: 800;
+    font-style: italic;
+    /* font-family: sylfaen; */
+    position: absolute;
+    z-index: 9;
+    transition: all 0.5s linear;
+}
+
+/* 透明玻璃球的样式 */
+.ball {
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    background-color: #00000047;
+    box-shadow: 0 -15.00px 73.88px rgba(0, 212, 240, 0.161) inset,
+        0 0 30.00px rgba(0, 32, 174, 0.151);
+    position: absolute;
+    z-index: 2;
+    float: right;
+    margin: 18.75px 0 0 501.25px;
+}
+
+/* 为玻璃球添加一些内部的光影效果（这里用伪元素实现） */
+.ball-inner-shadow-1 {
+    content: "";
+    width: 214.13px;
+    height: 180.38px;
+    border-radius: 50%;
+    background-color: rgba(235, 236, 161, 0.353);
+    position: absolute;
+    z-index: 3;
+    filter: blur(45px);
+    /* opacity: 0.9; */
+    box-shadow: -11.25px 32px 200px rgba(255, 0, 149, 0.525);
+    margin: 41.25px 0 0 546.25px;
+}
+
+/* 再添加一个更小的内部光影效果（也是用伪元素） */
+.ball-inner-shadow-2 {
+    content: "";
+    width: 230.63px;
+    height: 80.01px;
+    border-radius: 50%;
+    background-color: rgba(20, 211, 244, 0.264);
+    position: absolute;
+    z-index: 3;
+    opacity: 0.9;
+    filter: blur(45px);
+    box-shadow: 0 -10px 35px rgba(31, 92, 255, 0.401);
+    margin: 360.63px 0 0 620px;
+}
+
+/* 星星样式 */
+#stars {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.star {
+    position: absolute;
+    background-color: rgba(128, 220, 236, 0.61);
+    border-radius: 50%;
+    box-shadow: 0 0 10px 2px #a640758d;
+}
+
+/* 下滑 */
+.tip {
+    width: 150px;
+    margin: 605px 0 0 690px;
+    color: rgba(80, 110, 115, 0.474);
+    text-shadow: 0 0 5px #89a9d83e;
+    font-weight: 500;
+    /* letter-spacing: 1px; */
+    /* font-family: sylfaen; */
+    font-size: 17px;
+    position: absolute;
+}
+
+/* 下滑图标 */
+.arrow-down {
+    width: 40px;
+    height: 25px;
+    position: absolute;
+    margin: 640px 0 0 719px;
+    opacity: 0.3;
+}
+
+.down {
+    z-index: 4;
+    animation: floatArrow 1.5s ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+.d-enter-active,
+.d-leave-active {
+    transition: all 0.5s linear;
+}
+
+.d-enter-from,
+.d-leave-to {
+    opacity: 0;
+}
+
+.d-enter-to,
+.d-leave-from {
+    opacity: 1;
+}
+
+/* 定义浮动动画 */
+@keyframes floatArrow {
+    0% {
+        transform: translateY(0);
+        /* 初始位置 */
+    }
+
+    50% {
+        transform: translateY(-8px);
+        /* 上浮 */
+    }
+
+    100% {
+        transform: translateY(0);
+        /* 恢复到初始位置 */
+    }
+}
+
+/* 粒子的基础样式 */
+.particle {
+    position: absolute;
+    border-radius: 50%;
+    pointer-events: none;
+    background-color: rgba(128, 220, 236, 0.884);
+    box-shadow: 0 0 10px 2px #a64097c2;
+    z-index: 80;
+}
+
+@keyframes particleAnimation {
+    0% {
+        transform: scale(1) translateX(0) translateY(0);
+        /* 粒子从起点开始 */
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(0) translateX(25px) translateY(25px);
+        /* 粒子向外扩散并缩小 */
+        opacity: 0;
+    }
+}
+
+@keyframes particleMovement {
+    0% {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translate(var(--movement-x), var(--movement-y));
+    }
+}

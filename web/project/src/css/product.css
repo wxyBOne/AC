@@ -1,0 +1,272 @@
+/*
+ * @Author: wxyBone 13638456960@163.com
+ * @Date: 2024-11-26 08:44:08
+ * @LastEditors: wxyBone 13638456960@163.com
+ * @LastEditTime: 2024-12-26 17:13:27
+ * @FilePath: \Vue\dapp_vue\project\src\css\product.css
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+ */
+.product-container {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    overflow: auto;
+    user-select: none;
+}
+
+.product-room-1 {
+    position: relative;
+    background-color: #10141540;
+    backdrop-filter: blur(20px);
+    box-shadow: inset -2px 2px 10px rgba(67, 242, 255, 0.140), inset 2px -2px 10px rgba(255, 67, 145, 0.140);
+    display: flex;
+    width: 93%;
+    height: auto;
+    left: 0.2%;
+    z-index: 2;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-radius: 25px;
+    margin-top: 80px;
+    padding: 40px;
+    overflow: hidden;
+}
+
+.light3 {
+    top: 0;
+    right: 0;
+    margin: 50px -200px 0 0;
+    width: 420px;
+    height: 420px;
+    border-radius: 50%;
+    background-color: rgba(215, 216, 141, 0.412);
+    position: absolute;
+    /* opacity: 0.9; */
+    z-index: 1;
+    filter: blur(30px);
+    box-shadow: -20px 50px 800px rgba(255, 0, 149, 0.425);
+}
+
+.light4 {
+    top: 0;
+    left: 0;
+    margin: 370px 0 0 -200px;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    background-color: rgba(49, 224, 255, 0.254);
+    position: absolute;
+    z-index: 1;
+    opacity: 0.9;
+    filter: blur(30px);
+    box-shadow: 20px -50px 700px rgba(11, 72, 255, 0.398);
+}
+
+.product-title-section {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: rgba(161, 251, 260, 0.600);
+    text-shadow: 0px 6px 2px rgba(172, 35, 124, 0.847);
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.product-style {
+    position: absolute;
+    top: 58px;
+    left: 800px;
+    width: 74px;
+    text-align: center;
+    padding: 1px 0 4px;
+    border-radius: 20px;
+    color: rgba(0, 0, 0, 0.575);
+    font-weight: 700;
+    /* letter-spacing: 1px; */
+    font-size: 17px;
+    background-color: rgba(135, 183, 188, 0.800);
+}
+
+.product-image-out {
+    flex: 1;
+    /* margin-right: 10px; */
+}
+
+.product-image-section {
+    width: 500px;
+    border-radius: 10px;
+    opacity: 0.8;
+    /* border: solid 1px rgba(83, 94, 94, 0.445); */
+    height: auto;
+}
+
+.product-info-section {
+    flex: 1;
+    margin-top: 0px;
+}
+
+.product-row {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.product-price-section {
+    display: flex;
+    color: rgb(155, 56, 112);
+    font-weight: 700;
+    font-size: 29px;
+    margin-bottom: 20px;
+}
+
+.product-quantity-section {
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    margin-top: -10px;
+}
+
+.product-quantity-section button {
+    background-color: #2d2d2d2d;
+    border: 0;
+    box-shadow: inset -2px -2px 5px rgba(91, 0, 59, 0.421), inset 2px 2px 5px rgba(0, 238, 255, 0.275);
+    color: rgba(165, 205, 206, 0.71);
+    font-size: 30px;
+    cursor: pointer;
+    width: 42px;
+    height: 42px;
+    display: flex;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.1s ease-in-out;
+}
+
+.product-quantity-section button:hover {
+    filter: brightness(80%);
+}
+
+.product-quantity-section span {
+    padding: 6px 20px;
+    color: rgba(179, 203, 204, 0.929);
+    background-color: #54757557;
+    font-size: 22px;
+}
+
+.buy-button {
+    padding: 15px 120px;
+    background-color: rgb(155, 41, 106);
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 10px;
+    border: none;
+    border-radius: 8px;
+    color: rgba(0, 0, 0, 0.359);
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+}
+
+.buy-button:hover {
+    filter: brightness(90%);
+}
+
+.agreement {
+    color: rgba(179, 203, 204);
+    font-weight: 500;
+    font-size: 15px;
+}
+
+/* 复选框和圆圈样式 */
+.agreement-row {
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.agreement-row input[type="checkbox"] {
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    border: 1px solid rgba(179, 203, 204);
+    background-color: #54757557;
+    margin-right: 8px;
+    appearance: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+}
+
+.agreement-row input[type="checkbox"]:checked {
+    background-color: #54757530;
+}
+
+.agreement-row input[type="checkbox"]:checked::after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgba(155, 56, 112, 0.914);
+}
+
+.certificate-info {
+    margin-top: 50px;
+}
+
+.certificate-info p {
+    font-size: 15px;
+    color: rgba(179, 203, 204, 0.908);
+    margin: 5px 0;
+}
+
+#cer-info {
+    color: rgb(179, 203, 204);
+}
+
+.certificate-info strong {
+    font-size: 16px;
+    color: rgb(179, 203, 204);
+    font-weight: 700;
+}
+
+.certificate-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.copy-icon {
+    color: rgb(179, 203, 204);
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+.product-room-2 {
+    position: relative;
+    font-size: 16px;
+    color: rgba(179, 203, 204, 0.908);
+    background-color: #10141540;
+    backdrop-filter: blur(20px);
+    box-shadow: inset -2px 2px 10px rgba(67, 242, 255, 0.140), inset 2px -2px 10px rgba(255, 67, 145, 0.140);
+    width: 93%;
+    height: auto;
+    left: 0.2%;
+    z-index: 2;
+    border-radius: 25px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    padding: 30px 40px 30px;
+    overflow: hidden;
+}
+
+.product-room-2 h2 {
+    font-size: 20px;
+    color: rgb(179, 203, 204);
+    font-weight: 700;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.product-room-2 li {
+    margin-bottom: 10px;
+}
