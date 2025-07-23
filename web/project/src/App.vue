@@ -10,7 +10,6 @@
   <div class="common-layout">
     <!-- 用于显示路由组件 -->
     <router-view> </router-view>
-    <router-view name="room"></router-view>
   </div>
 </template>
 
