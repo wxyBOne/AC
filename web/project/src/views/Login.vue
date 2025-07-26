@@ -135,6 +135,7 @@ const handleAction = async () => {
                     username: response.data.username,
                     privateKey: response.data.privateKey
                 });
+                store.dispatch('setToken', response.data.token);
                 setTimeout(() => {
                     router.push('/Shop');
                 }, 1000); // 延时 1 秒后跳转
