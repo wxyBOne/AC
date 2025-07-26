@@ -39,7 +39,7 @@ if (token) {
     store.dispatch('setToken', token);
 }
 if (username) {
-    store.dispatch('updateUserInfo', { username, privateKey }); // 假设您没有存储私钥
+    store.dispatch('updateUserInfo', { username, privateKey });
 }
 
 // 检查后端状态
